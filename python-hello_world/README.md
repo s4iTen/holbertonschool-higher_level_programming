@@ -1,1 +1,1 @@
-this repo if fot hight level programing
+this folder is the fisrt folder of hight level programming
