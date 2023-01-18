@@ -8,6 +8,6 @@ if __name__ == "__main__":
         if line_len == 1:
             print("{}: arguments.".format(line_len - 1))
         elif i == 0:
-            print("{}: arguments:".format(line_len - 1))
+            print("{} arguments:".format(line_len - 1))
         else:
             print("{}: {}".format(i, sys.argv[i]))
