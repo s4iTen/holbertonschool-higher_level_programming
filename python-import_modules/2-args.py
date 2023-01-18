@@ -9,7 +9,7 @@ if __name__ == "__main__":
             print("{} arguments.".format(line_len - 1))
         elif line_len == 2:
             if i == 1:
-                print("{} argument.".format(line_len - 1))
+                print("{} argument:".format(line_len - 1))
                 print("{}: {}".format(i, sys.argv[i]))
         elif i == 0:
             print("{} arguments:".format(line_len - 1))
