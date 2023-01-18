@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     import sys
 
-    line_len = len(sys.argv) 
+    line_len = len(sys.argv)
 
     for i in range(line_len):
         if line_len == 1:
