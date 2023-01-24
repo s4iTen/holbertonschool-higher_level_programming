@@ -4,7 +4,7 @@ def element_at(my_list, idx):
         return None
     for i in range(len(my_list)):
         i += 1
-    if idx > i:
+    if idx > i - 1:
         return None
     else:
-        return i
+        return i - 1
