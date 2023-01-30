@@ -23,7 +23,9 @@ class Square:
         return self.__size * self.__size
 
     def my_print(self):
-        for i in range(self.size):
+        if self.size > 0:
             for i in range(self.size):
-                print("#", end="")
-            print()
+                for i in range(self.size):
+                    print("#", end="")
+                print()
+        print()
