@@ -3,14 +3,17 @@
 
 
 class Rectangle:
-    number_of_instances = 0
     """this is the main class function"""
+    """This is a public feild, a counter of instance"""
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
         Rectangle.number_of_instances += 1
 
     """This is the method width"""
+
     @property
     def width(self):
         return self.__width
