@@ -5,8 +5,8 @@
 class Rectangle:
     """this is the main class function"""
     def __init__(self, width, height):
-        self.__width = width
         self.__height = height
+        self.__width = width
 
     """This is the method width"""
     @property
@@ -19,6 +19,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
+        self.__width = value
 
     @property
     def height(self):
@@ -27,6 +28,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("height must be >= 0")
+        self.__height = value
