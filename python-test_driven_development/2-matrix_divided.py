@@ -8,9 +8,12 @@ def matrix_divided(matrix, div):
         if not isinstance([i for i in matrix[i]], list):
             if not isinstance([j for i in matrix[i][j]], int):
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-    for i in range(len(matrix)):
-        if len(matrix[i]) != len(matrix[i + 1]):
-            raise TypeError("Each row of the matrix must have the same size")
+    for i in matrix:
+        if len(matrix) < 2:
+            continue
+        for j in matrix:
+            if len(i) != len(j):
+                raise TypeError("Each row of the matrix must have the same size")
     if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError("div must be a number")
     if div == 0:
