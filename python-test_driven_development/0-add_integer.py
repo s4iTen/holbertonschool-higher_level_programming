@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" this is the definition of the function"""
+
+
 def add_integer(a, b=98):
     """
     add_integer(1, 2)
@@ -9,7 +12,6 @@ def add_integer(a, b=98):
     >>> 100
     add_integer(100.3, -2)
     >>> 98
-    
     """
     if isinstance(a, (float, int)):
         if isinstance(b, (float, int)):
