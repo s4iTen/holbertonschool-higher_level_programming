@@ -22,6 +22,6 @@ TypeError: last_name must be a string
 >>> say_my_name("Brennan")
 My name is Brennan 
 
->>> say_my_name("LeBron", ["Cavs", "Lakers", "Heat"])
+>>> say_my_name(None)
 Traceback (most recent call last):
-TypeError: last_name must be a string
+TypeError: first_name must be a string
