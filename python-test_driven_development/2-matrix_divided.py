@@ -5,8 +5,12 @@
 def matrix_divided(matrix, div):
     """this is the function that devide the matrix"""
     if not isinstance(matrix, list):
-        if not isinstance([i for i in matrix[i]], list):
-            if not isinstance([j for i in matrix[i][j]], int):
+        for i in range(len(matrix)):
+            if not isinstance(matrix[i], list):
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if not isinstance(matrix[i][j], int):
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     for i in matrix:
         if len(matrix) < 2:
