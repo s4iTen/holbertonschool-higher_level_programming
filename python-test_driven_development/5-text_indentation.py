@@ -6,5 +6,5 @@ def text_indentation(text):
     for char in text:
         new += char
         if char in ['?', '.', ':']:
-            new += '\n\n'
+            new += '\n'
     print(new)
