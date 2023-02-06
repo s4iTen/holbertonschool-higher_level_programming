@@ -18,16 +18,16 @@ TypeError: list expected at most 1 argument, got 2
 >>> print(my_list)
 [1, 3]
 
-
+>>> my_list = MyList()
 >>> my_list.append(5)
 >>> my_list.append(4)
 >>> my_list.append(3)
->>> print(sorted(my_list))
+>>> my_list.print_sorted()
 [3, 4, 5]
 
 >>> my_list.append(5)
 >>> my_list.append(4)
 >>> my_list.append("3")
->>> print(sorted(my_list))
+>>> my_list.print_sorted()
 Traceback (most recent call last):
 TypeError: '<' not supported between instances of 'str' and 'int'
