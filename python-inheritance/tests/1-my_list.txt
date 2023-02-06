@@ -21,6 +21,12 @@ TypeError: list expected at most 1 argument, got 2
 
 >>> my_list.append(5)
 >>> my_list.append(4)
+>>> my_list.append(3)
+>>> print(sorted(my_list))
+[3, 4, 5]
+
+>>> my_list.append(5)
+>>> my_list.append(4)
 >>> my_list.append("3")
 >>> print(sorted(my_list))
 Traceback (most recent call last):
