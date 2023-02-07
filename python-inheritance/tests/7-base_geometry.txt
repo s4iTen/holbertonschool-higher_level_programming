@@ -43,7 +43,7 @@ Traceback (most recent call last):
 TypeError: name must be an integer
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator(None)
+>>> bg.integer_validator() # doctest: +NORMALIZE_WHITESPACE
 Traceback (most recent call last):
 TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
