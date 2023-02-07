@@ -12,8 +12,6 @@ class BaseGeometry:
     def integer_validator(self, name, value):
         if type(value) != int:
             raise TypeError(TypeError(f"{name} must be an integer"))
-        if value == True or value == False:
-            raise TypeError(TypeError(f"{name} must be an integer"))
         if value <= 0:
             raise ValueError(ValueError(f"{name} must be greater than 0"))
 """this is the declaration of the class Rectangle"""
