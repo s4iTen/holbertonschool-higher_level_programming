@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""this is the declaration of the Module"""
 import sys
-
-
 """this function write the argv in JSON file"""
 
 
