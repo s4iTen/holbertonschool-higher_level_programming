@@ -6,5 +6,5 @@ def read_file(filename=""):
     """this Module open the file and read it"""
     with open(filename, 'r', encoding='utf8') as f:
         file = f.read()
-        print(file)
+        print(file, end="")
     f.close()
