@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""This is the declaration of the module"""
 def pascal_triangle(n):
+    """this function create apascal triangle"""
     result = []
     if n <= 0:
         return result
