@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def pascal_triangle(n):
     result = []
+    if n <= 0:
+        return result
     for i in range(n):
         if i == 0:
             result.append([1])
