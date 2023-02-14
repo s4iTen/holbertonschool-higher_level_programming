@@ -81,6 +81,10 @@ class Rectangle(Base):
         return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {w}/{h}")
 
     def update(self, *args):
+        """
+        this function assign the arguments of it
+         to the argument of the main function
+        """
         arg_count = len(args)
         if arg_count > 0:
             self.id = args[0]
