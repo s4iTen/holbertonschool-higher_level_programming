@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """this is the declaration of the class Rectangle"""
 from models.base import Base
+import json
 
 
 class Rectangle(Base):
@@ -92,3 +93,10 @@ class Rectangle(Base):
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        """this function return a dictionary representation of a Rectangle"""
+        w = self.width
+        i = self.id
+        h = self.height
+        return {'x': self.x, 'y': self.y, 'id': i, 'height': h, 'width': w}
