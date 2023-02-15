@@ -6,14 +6,14 @@ from models.base import Base
 class Rectangle(Base):
     """this function call the super class base"""
     def __init__(self, width, height, x=0, y=0, id=None):
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
         self.width = width
         self.height = height
         self.x = x
         self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
         super().__init__(id)
 
     @property
@@ -92,3 +92,5 @@ class Rectangle(Base):
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+                if key == "y":
+                    self.__y = value
