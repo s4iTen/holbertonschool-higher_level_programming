@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """this is the declaration of the class base"""
+import json
 
 
 class Base:
@@ -15,3 +16,6 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
+
+    def to_json_string(list_dictionaries):
+        return json.dumps(list_dictionaries)
