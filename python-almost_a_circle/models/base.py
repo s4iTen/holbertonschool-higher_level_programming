@@ -18,4 +18,6 @@ class Base:
             self.id = id
 
     def to_json_string(list_dictionaries):
+        """this function retuen the json string representation of
+         list_dictionaties"""
         return json.dumps(list_dictionaries)
