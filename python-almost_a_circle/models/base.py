@@ -37,3 +37,6 @@ class Base:
                     dict_list.append(obj.to_dictionary())
             json_str = cls.to_json_string(dict_list)
             file.write(json_str)
+
+    def from_json_string(json_string):
+        return json.dumps(json_string)
