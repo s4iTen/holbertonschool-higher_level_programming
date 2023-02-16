@@ -39,4 +39,6 @@ class Base:
             file.write(json_str)
 
     def from_json_string(json_string):
+        """this function return the list of the JSON
+         string representation"""
         return json.dumps(json_string)
