@@ -39,13 +39,12 @@ class Base:
             file.write(json_str)
 
     def from_json_string(json_string):
-        """this function return the list of the JSON
-         string representation"""
+        """This function returns a list of the JSON string representation"""
         if json_string:
             if isinstance(json_string, list):
                 return json_string
             else:
-                res = list(eval(json_string))
+                res = json.loads(json_string)
                 return res
         else:
             return []
