@@ -55,6 +55,9 @@ class Base:
         This method returns a new instance of the class
         with the specified attributes.
         """
-        res = cls(1, 1)
+        if cls.__name__ == "Rectangle":
+            res = cls(1, 1)
+        if cls.__name__ == "Square":
+            res = cls(1)
         res.update(**dictionary)
         return res
