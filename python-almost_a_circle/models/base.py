@@ -41,9 +41,11 @@ class Base:
     def from_json_string(json_string):
         """this function return the list of the JSON
          string representation"""
-        if isinstance(json_string, list):
-            return json_string
+        if json_string:
+            if isinstance(json_string, list):
+                return json_string
+            else:
+                res = list(eval(json_string))
+                return res
         else:
-            res = list(eval(json_string))
-            return res
-        
+            return []
