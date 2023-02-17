@@ -49,3 +49,13 @@ class Base:
                 return res
         else:
             return []
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        This method returns a new instance of the class
+        with the specified attributes.
+        """
+        res = cls(1, 1)
+        res.update(**dictionary)
+        return res
