@@ -61,3 +61,14 @@ class Base:
             res = cls(1)
         res.update(**dictionary)
         return res
+
+    @classmethod
+    def load_from_file(cls):
+        """Load a list of instances from a file in JSON format"""
+        if cls is None:
+            return []
+        file = cls.__name__ + ".json"
+        with open(file, "r") as file:
+            ret = json.load(file)
+            obj_list = [cls.create(**d) for d in ret]
+            return obj_list
