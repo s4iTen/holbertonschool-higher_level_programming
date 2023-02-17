@@ -68,7 +68,8 @@ class Base:
         if cls is None:
             return []
         file = cls.__name__ + ".json"
-        with open(file, "r") as file:
-            ret = json.load(file)
-            obj_list = [cls.create(**d) for d in ret]
+        with open(file, mode="r") as f:
+            json_data = f.read()
+            dict_list = cls.from_json_string(json_data)
+            obj_list = [cls.create(**d) for d in dict_list]
             return obj_list
