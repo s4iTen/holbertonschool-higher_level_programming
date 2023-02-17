@@ -65,11 +65,12 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """Load a list of instances from a file in JSON format"""
-        if cls is None:
+        try:
+            file = cls.__name__ + ".json"
+            with open(file, "r") as f:
+                json_data = f.read()
+                dict_list = cls.from_json_string(json_data)
+                obj_list = [cls.create(**d) for d in dict_list]
+                return obj_list
+        except FileNotFoundError:
             return []
-        file = cls.__name__ + ".json"
-        with open(file, mode="r") as f:
-            json_data = f.read()
-            dict_list = cls.from_json_string(json_data)
-            obj_list = [cls.create(**d) for d in dict_list]
-            return obj_list
