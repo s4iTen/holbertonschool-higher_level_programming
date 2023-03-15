@@ -1,2 +1,2 @@
 -- This script Create a new databases
-Create table hbtn_0c_0();
+Create or replace table hbtn_0c_0();
