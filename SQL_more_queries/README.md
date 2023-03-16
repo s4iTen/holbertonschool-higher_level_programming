@@ -1,0 +1,1 @@
+This is the directory of the more_queries SQL project
