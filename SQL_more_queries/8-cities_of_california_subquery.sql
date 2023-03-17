@@ -1,3 +1,2 @@
 -- This script list all the records and ordered by the id and sorted
-SELECT * FROM hbtn_0d_usa.state_id
-    ORDER BY cities.id DESC;
+SELECT id, name FROM cities WHERE state_id IN(SELECT id FROM states WHERE name = 'California') ORDER BY id;
