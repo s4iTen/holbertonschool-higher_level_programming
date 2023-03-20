@@ -1,4 +1,4 @@
--- 
+-- This script list all the genre of the tv show Dexter
 SELECT 
   DISTINCT tv_genres.name 
 FROM 
