@@ -1,0 +1,1 @@
+This is the readme file for the directory of the project object relational mapping in python
