@@ -16,7 +16,7 @@ if __name__ == '__main__':
         conne = MySQLdb.connect(host=h, user=u, password='', db=sys.argv[3])
         curs = conne.cursor()
         curs.execute("SELECT * \
-                      FROM states WHERE states.name\
+                      FROM states WHERE BINARY states.name\
                       = '{}' ORDER BY id ASC".format(search))
         rows = curs.fetchall()
         for row in rows:
