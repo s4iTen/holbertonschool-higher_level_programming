@@ -21,9 +21,6 @@ if __name__ == '__main__':
                 ORDER BY `c`.`id`")
         rows = curs.fetchall()
         result = []
-        if sys.argv[4] not in rows[4]:
-            print()
-            sys.exit(1)
         for row in rows:
             if row[4] == sys.argv[4]:
                 result.append(row[2])
