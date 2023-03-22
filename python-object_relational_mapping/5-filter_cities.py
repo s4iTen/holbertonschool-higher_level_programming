@@ -21,11 +21,11 @@ if __name__ == '__main__':
                 ORDER BY `c`.`id`")
         rows = curs.fetchall()
         result = []
+        if sys.argv[4] not in rows[4]:
+            print()
         for row in rows:
             if row[4] == sys.argv[4]:
                 result.append(row[2])
-            else:
-                print()
         for i, j in enumerate(result):
             if(i < len(result) - 1):
                 print(j, end=", ")
