@@ -3,6 +3,7 @@
     This script lists all the state's Objects from the database hbtn_0e_6_usa
     Ordered by state isand take the Username,
     the Password and the DB as an arguments
+
 """
 
 
@@ -21,8 +22,6 @@ Db = sys.argv[3]
 if __name__ == "__main__":
     engine = \
      create_engine(f"mysql+mysqldb://{U}:@localhost/{Db}", pool_pre_ping=True)
-
-"""This is the Module documentation"""
 
 Session = sessionmaker(bind=engine)
 session = Session()
