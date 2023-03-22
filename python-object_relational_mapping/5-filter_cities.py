@@ -23,11 +23,13 @@ if __name__ == '__main__':
         result = []
         if sys.argv[4] not in rows[4]:
             print()
+            sys.exit(1)
         for row in rows:
             if row[4] == sys.argv[4]:
                 result.append(row[2])
         if len(result) == 0:
             print()
+            sys.exit(1)
         for i, j in enumerate(result):
             if(i < len(result) - 1):
                 print(j, end=", ")
