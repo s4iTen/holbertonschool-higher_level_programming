@@ -1,14 +1,14 @@
 #!/usr/bin/python3
+"""
+This script lists all the state's Objects Ordered by state is
+and take the username, the Password and the DB as an arguments
+"""
+
+
 # Importing the sql alchemy To interract with the DB
 # Impor the sys Module to use the argument
 # Import the sessionmaker to make a new session
 # Import the State Module to get the class Attributes
-"""
-This script lists all the state's Objects Ordered by state is
-and take the username, the Password and the DB as an argument
-"""
-
-
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
