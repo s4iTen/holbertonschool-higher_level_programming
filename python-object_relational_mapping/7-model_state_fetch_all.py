@@ -17,11 +17,12 @@ if len(sys.argv) < 4:
 
 U = sys.argv[1]
 Db = sys.argv[3]
-"""This is the Module documentation"""
 
 if __name__ == "__main__":
     engine = \
      create_engine(f"mysql+mysqldb://{U}:@localhost/{Db}", pool_pre_ping=True)
+
+"""This is the Module documentation"""
 
 Session = sessionmaker(bind=engine)
 session = Session()
