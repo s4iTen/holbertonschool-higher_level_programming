@@ -3,7 +3,10 @@
 # Impor the sys Module to use the argument
 # Import the sessionmaker to make a new session
 # Import the State Module to get the class Attributes
-"""This is the new module that i used sql alchemy in"""
+"""
+This script lists all the state's Objects Ordered by state is
+and take the username, the Password and the DB as an argument
+"""
 
 
 import sys
