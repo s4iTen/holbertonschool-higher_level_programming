@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This script lists all the state's Objects Ordered by state is
-and take the username, the Password and the DB as an arguments
+This script lists all the state's Objects from the database hbtn_0e_6_usa Ordered by state is
+and take the Username, the Password and the DB as an arguments.
 """
 
 
