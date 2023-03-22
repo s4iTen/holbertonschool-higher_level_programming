@@ -26,6 +26,8 @@ if __name__ == '__main__':
         for row in rows:
             if row[4] == sys.argv[4]:
                 result.append(row[2])
+        if len(result) == 0:
+            print()
         for i, j in enumerate(result):
             if(i < len(result) - 1):
                 print(j, end=", ")
