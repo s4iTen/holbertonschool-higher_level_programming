@@ -14,12 +14,10 @@ if __name__ == "__main__":
     if len(sys.argv) < 4:
         sys.exit(1)
 
-    U = sys.argv[1]
+    Us = sys.argv[1]
     Db = sys.argv[3]
-
-
-    engine = \
-     create_engine(f"mysql+mysqldb://{U}:@localhost/{Db}", pool_pre_ping=True)
+    S = "mysql+mysqldb://"
+    engine = create_engine(f"{S}{Us}:@localhost/{Db}", pool_pre_ping=True)
 
     Session = sessionmaker(bind=engine)
     session = Session()
