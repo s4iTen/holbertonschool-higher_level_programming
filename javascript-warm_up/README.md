@@ -1,0 +1,1 @@
+This is the directory of the first projects of javascript
