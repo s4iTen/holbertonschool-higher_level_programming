@@ -1,12 +1,12 @@
 #!/usr/bin/node
+
 exports.converter = function (base) {
-  return function (num) {
-    if (num === 0) return '0';
-    let result = '';
-    while (num > 0) {
-      result = (num % base) + result;
-      num = Math.floor(num / base);
+  function recursiveConverter (number) {
+    if (number < base) {
+      return number.toString();
+    } else {
+      return recursiveConverter(Math.floor(number / base)) + (number % base).toString();
     }
-    return result;
-  };
+  }
+  return recursiveConverter;
 };
