@@ -1,3 +1,3 @@
 #!/usr/bin/node
-const header = document.querySelector('header');
-header.style.color = 'red';
+const headers = document.getElementsByTagName('header');
+headers[0].style.color = 'red';
